@@ -263,9 +263,9 @@ def draw(x,y,list_of_v,title):
                 contour_list.append(temp)
     # 取出边界线上点坐标的两个维度
     cx, cy = extract12(contour_list)
-    #画折线图
+    # 画折线图
     plt.plot(cx, cy)
-    #保存图像
+    # 保存图像
     plt.savefig(title)
     plt.show()
 

@@ -78,7 +78,7 @@ class dv:
     # 获得该弱分类器的线性组合系数
     def getalpha(self):
         return self.__a
-    #用来print
+    # 用来print
     def __str__(self):
         return 'Threshold='+str(self.__val)+',Direction='+str(self.__dire)+',Dimension='+str(self.__dim)
 

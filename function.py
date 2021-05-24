@@ -203,7 +203,7 @@ def G_errate(x,y,N,list_of_v):
     return total_error
 
 # Adaboost算法的循环部分（每一次循环找到一个基本分类器）
-#x是二维样本，y是样本的所属类，N是样本的数量，wm是每次循环需要更新的样本权值
+# x是二维样本，y是样本的所属类，N是样本的数量，wm是每次循环需要更新的样本权值
 def Adaboost_Loop(x,y,N,wm):
     # 根据每个样本的权值D=wm，找到基本分类器之一
     v = find_weak_classifier(x, y, D=wm)

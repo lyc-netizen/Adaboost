@@ -20,14 +20,14 @@ def create_data():
             data[i,-1] = -1
     return data[:,:2], data[:,-1]
 
-#辅助函数：抽取二维数据的第一维度和第二维度
+# 辅助函数：抽取二维数据的第一维度和第二维度
 def extract12(x):
     N=len(x)
     x1,x2=[],[]
-    #第一维度
+    # 第一维度
     for i in range(N):
         x1.append(x[i][0])
-    #第二维度
+    # 第二维度
     for i in range(N):
         x2.append(x[i][1])
     return x1,x2
